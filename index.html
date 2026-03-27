@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ETI MCQ Quiz | Units III, IV & V</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">ETI (316313)</p>
+        <h1>Units III, IV & V MCQ Quiz</h1>
+        <p class="subtitle">
+          149 MCQs with instant answer checking, explanation, search, unit filter, and score tracking.
+        </p>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-card">
+          <span class="stat-label">Total</span>
+          <span class="stat-value" id="totalCount">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Answered</span>
+          <span class="stat-value" id="answeredCount">0</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Correct</span>
+          <span class="stat-value" id="scoreCount">0</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <div class="toolbar-row">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Search by question, option, answer, keyword..."
+        />
+
+        <select id="unitFilter" class="select-box">
+          <option value="all">All Units</option>
+          <option value="Unit 3">Unit 3</option>
+          <option value="Unit 4">Unit 4</option>
+          <option value="Unit 5">Unit 5</option>
+        </select>
+
+        <button id="shuffleBtn" class="secondary-btn">Shuffle</button>
+        <button id="resetBtn" class="primary-btn">Reset Quiz</button>
+      </div>
+
+      <div class="toolbar-row info-row">
+        <span id="showingText">Showing 0 questions</span>
+      </div>
+    </section>
+
+    <main id="quizContainer" class="quiz-grid"></main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
